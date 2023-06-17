@@ -23,7 +23,7 @@ module.exports = defineConfig({
 });
 const mysql = require("mysql");
 function queryTestDb(query, config) {
-  const connection = createConnection(config.env.db);
+  const connection = mysql.createConnection(config.env.db);
   connection.connect();
   return new Promise((resolve, reject) => {
     connection.query(query, (error, results) => {

@@ -1,6 +1,4 @@
 const { defineConfig } = require("cypress");
-const { reject } = require("cypress/types/bluebird");
-const { result } = require("cypress/types/lodash");
 
 module.exports = defineConfig({
   env: {
